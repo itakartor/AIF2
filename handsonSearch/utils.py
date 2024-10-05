@@ -53,7 +53,7 @@ def actions_from_path(start: Tuple[int, int], path: List[Tuple[int, int]]) -> Li
                 actions.append(action_map["N"])
             else: actions.append(action_map["S"])
         else:
-            raise Exception("x and y can't change at the same time. oblique moves not allowed!")
+            raise Exception(f"x_s:{x_s}, x:{x}, y_s:{y_s}, y:{y} x and y can't change at the same time. oblique moves not allowed!")
         x_s = x
         y_s = y
     
