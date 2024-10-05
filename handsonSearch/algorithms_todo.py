@@ -8,7 +8,7 @@ from typing import Tuple, List
 def build_path(parent: dict, target: Tuple[int, int]) -> List[Tuple[int, int]]:
     path = []
     while target is not None:
-        path.append(target)
+        path.insert(0, target)
         target = parent[target]
     return path
 
